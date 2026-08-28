@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G-SUMMIT 2026 공동 세션 제안 | 마크앤컴퍼니(혁신의숲) × 그룹바이</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<style>
+  :root{
+    color-scheme: light;
+    --teal-deep:#0F8F68;
+    --teal:#1FAE79;
+    --teal-light:#E7F7F0;
+    --partner:#2B2F38;
+    --partner-light:#EEF0F3;
+    --ink:#16181D;
+    --sub:#5B6470;
+    --line:#E4E7EB;
+    --paper:#FFFFFF;
+    --bg:#F6F8F7;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(16,30,25,0.07);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  html{background:#F6F8F7;}
+  body{
+    margin:0;
+    font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.65;
+  }
+  .eng{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:-0.3px;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+
+  /* NAV */
+  nav.topbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.topbar .inner{
+    max-width:1080px;margin:0 auto;padding:14px 28px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+  .brandmark{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:-0.2px;}
+  .brandmark .dot{width:10px;height:10px;border-radius:3px;background:var(--teal);display:inline-block;}
+  nav.topbar ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-size:13.5px;font-weight:500;color:var(--sub);flex-wrap:wrap;}
+  nav.topbar ul a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;}
+  nav.topbar ul a:hover{color:var(--ink);border-color:var(--teal);}
+
+  /* HERO */
+  header.hero{
+    background:linear-gradient(180deg,#0B3B2C 0%, #0F8F68 55%, #1FAE79 100%);
+    color:#fff;padding:64px 0 56px;
+  }
+  header.hero .wrap{display:flex;flex-direction:column;gap:18px;}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.28);
+    padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:600;
+    width:fit-content;letter-spacing:.2px;
+  }
+  h1.title{font-size:38px;margin:6px 0 0;font-weight:900;letter-spacing:-0.5px;line-height:1.28;}
+  h1.title .eng{font-weight:800;}
+  .subtitle{font-size:17px;font-weight:500;color:rgba(255,255,255,0.9);margin:0;}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+  .chip{
+    background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.3);
+    padding:9px 14px;border-radius:12px;font-size:13px;font-weight:500;
+    display:flex;align-items:center;gap:7px;
+  }
+  .chip b{font-weight:700;}
+  .chip.confirm{background:#fff;color:var(--teal-deep);border-color:#fff;font-weight:700;}
+
+  /* SECTIONS */
+  section{padding:64px 0;}
+  section.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .eyebrow{font-size:12.5px;font-weight:700;color:var(--teal-deep);letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;}
+  h2.h2{font-size:26px;font-weight:800;margin:0 0 6px;letter-spacing:-0.4px;}
+  p.lead{color:var(--sub);font-size:15px;margin:0 0 32px;max-width:680px;}
+
+  /* PROBLEM CARDS */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .card{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;box-shadow:var(--shadow);
+  }
+  .card h3{margin:12px 0 8px;font-size:16.5px;font-weight:700;}
+  .card p{margin:0;color:var(--sub);font-size:14px;}
+  .badge-ico{
+    width:38px;height:38px;border-radius:11px;background:var(--teal-light);color:var(--teal-deep);
+    display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;
+  }
+  .stat{color:var(--teal-deep);font-weight:800;}
+  .solution-box{
+    margin-top:22px;background:var(--teal-light);border:1px solid #CDEEDF;border-radius:var(--radius);
+    padding:22px 26px;font-size:14.5px;color:#0B4E39;
+  }
+  .solution-box b{color:var(--teal-deep);}
+
+  /* INFO GRID */
+  .info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .info-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 16px;
+  }
+  .info-card .label{font-size:12px;color:var(--sub);font-weight:600;margin-bottom:6px;}
+  .info-card .value{font-size:14.5px;font-weight:700;line-height:1.4;}
+  .info-card .value.big{color:var(--teal-deep);}
+  .note{font-size:12.5px;color:var(--sub);margin-top:14px;}
+
+  /* SESSION CARDS */
+  .session-card{
+    background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;
+  }
+  .session-tag{
+    display:inline-flex;width:fit-content;background:var(--ink);color:#fff;font-size:11.5px;font-weight:700;
+    padding:4px 10px;border-radius:7px;letter-spacing:.3px;
+  }
+  .session-card h3{margin:2px 0 0;font-size:19px;font-weight:800;letter-spacing:-0.3px;}
+  .session-card ul{margin:6px 0 0;padding-left:18px;color:var(--sub);font-size:14px;}
+  .session-card li{margin-bottom:6px;}
+  .session-card li b{color:var(--ink);}
+  .panel-line{
+    margin-top:4px;grid-column:1/-1;background:#F1F3F5;border-radius:12px;padding:14px 18px;
+    font-size:13.5px;color:var(--sub);
+  }
+
+  /* BOOTH MOCKUP */
+  .booth-note{
+    background:#FFF8E8;border:1px solid #F3E3B4;color:#6B5416;
+    font-size:13px;padding:12px 16px;border-radius:12px;margin-bottom:26px;
+  }
+  .elevation{
+    display:flex;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);
+    min-height:340px;
+  }
+  .panel{flex:1;padding:30px 26px;position:relative;display:flex;flex-direction:column;color:#fff;}
+  .panel.mnc{background:linear-gradient(160deg,#12A075,#0C7E5C);}
+  .panel.partner{background:linear-gradient(160deg,#3A4150,#22252C);}
+  .panel .deco{position:absolute;top:22px;right:22px;font-size:20px;opacity:.55;}
+  .panel .deco.dots{top:22px;left:22px;right:auto;font-size:15px;letter-spacing:2px;opacity:.7;}
+  .logo-pill{
+    background:rgba(255,255,255,0.95);color:var(--ink);border-radius:10px;
+    padding:8px 14px;font-weight:800;font-size:13.5px;width:fit-content;margin-bottom:22px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .logo-pill .mark{width:16px;height:16px;border-radius:4px;background:var(--teal);display:inline-block;}
+  .panel.partner .logo-pill{border:1.5px dashed #9AA1AC;background:rgba(255,255,255,0.08);color:#C7CCD3;}
+  .panel.partner .logo-pill .mark{background:transparent;border:1.5px dashed #C7CCD3;}
+  .panel-headline{font-size:23px;font-weight:800;line-height:1.3;margin:0 0 10px;letter-spacing:-0.3px;}
+  .panel-sub{font-size:13.5px;color:rgba(255,255,255,0.85);margin:0 0 18px;max-width:280px;}
+  .stat-row{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+  .stat-pill{
+    background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.25);
+    border-radius:9px;padding:6px 10px;font-size:11.5px;font-weight:700;
+  }
+  .panel-fill{flex:1;}
+  .counter-bar{
+    background:#fff;color:var(--ink);border-radius:10px;padding:12px 16px;
+    font-weight:800;font-size:14px;margin-top:auto;display:flex;align-items:center;justify-content:space-between;
+  }
+  .counter-bar span.tag{font-size:11px;font-weight:600;color:var(--sub);}
+  .panel.partner .counter-bar{background:rgba(255,255,255,0.9);color:#22252C;}
+
+  .floorplan-wrap{
+    margin-top:28px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px;box-shadow:var(--shadow);
+  }
+  .floorplan-wrap h4{margin:0 0 4px;font-size:15px;font-weight:700;}
+  .floorplan-wrap .fp-note{font-size:12.5px;color:var(--sub);margin:0 0 18px;}
+  .fp-caption{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:12.5px;color:var(--sub);}
+  .fp-caption span{display:flex;align-items:center;gap:6px;}
+  .fp-caption i{width:10px;height:10px;border-radius:3px;display:inline-block;}
+
+  /* VALUE CARDS */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .value-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);}
+  .value-card .num{font-size:12px;font-weight:800;color:var(--teal-deep);margin-bottom:10px;}
+  .value-card h3{font-size:15.5px;margin:0 0 8px;font-weight:700;}
+  .value-card p{margin:0;font-size:13.5px;color:var(--sub);}
+
+  /* TABLE */
+  table.rnr{width:100%;border-collapse:collapse;background:var(--paper);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+  table.rnr th,table.rnr td{padding:14px 16px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line);vertical-align:top;}
+  table.rnr th{background:var(--teal-light);color:var(--teal-deep);font-weight:700;font-size:13px;}
+  table.rnr td:first-child{font-weight:700;background:#FAFBFB;width:110px;}
+  table.rnr tr:last-child td{border-bottom:none;}
+  table.rnr td ul{margin:0;padding-left:16px;color:var(--ink);}
+  table.rnr td ul li{margin-bottom:4px;}
+
+  /* CONTACT */
+  .contact-card{
+    background:linear-gradient(135deg,#0F8F68,#0B3B2C);color:#fff;border-radius:20px;
+    padding:36px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;
+  }
+  .contact-card h3{margin:0 0 6px;font-size:20px;font-weight:800;}
+  .contact-card p{margin:0;color:rgba(255,255,255,0.85);font-size:14px;}
+  .contact-card .who{font-size:15px;font-weight:700;}
+  .contact-card .details{display:flex;flex-direction:column;gap:4px;font-size:14px;}
+
+  footer{padding:30px 0;text-align:center;color:var(--sub);font-size:12.5px;}
+
+  @media (max-width:760px){
+    .grid2,.grid3,.info-grid{grid-template-columns:1fr;}
+    .elevation{flex-direction:column;min-height:auto;}
+    h1.title{font-size:28px;}
+    nav.topbar ul{display:none;}
+  }
+  @media print{
+    nav.topbar{position:static;}
+    section{padding:32px 0;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="inner">
+    <div class="brandmark"><span class="dot"></span>마크앤컴퍼니 · 혁신의숲</div>
+    <ul>
+      <li><a href="#overview">세션 개요</a></li>
+      <li><a href="#session">세션 구성</a></li>
+      <li><a href="#value">제공 가치</a></li>
+      <li><a href="#rnr">R&amp;R</a></li>
+      <li><a href="#contact">문의</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">G-SUMMIT 2026 · 경기스타트업서밋 공동 세션 제안</span>
+    <h1 class="title">데이터로 보는<br><span class="eng">스타트업 채용 인사이트</span></h1>
+    <p class="subtitle">마크앤컴퍼니(혁신의숲)가 그룹바이와 함께 만드는 공동 세션 제안입니다.</p>
+    <div class="chips">
+      <div class="chip confirm">✓ 일정 확정 · 10월 15일(목) 13:00~14:30</div>
+      <div class="chip">📍 수원컨벤션센터 · 서브 세션 무대</div>
+      <div class="chip">🤝 세션 2개 공동 운영</div>
+    </div>
+  </div>
+</header>
+
+<section id="overview">
+  <div class="wrap">
+    <p class="eyebrow">Background</p>
+    <h2 class="h2">배경 및 목적</h2>
+    <p class="lead">스타트업 채용 시장에는 데이터로 풀 수 있는 두 가지 문제가 있습니다. 마크앤컴퍼니는 그룹바이와 이 문제를 함께 다루는 자리를 제안합니다.</p>
+
+    <div class="grid2">
+      <div class="card">
+        <div class="badge-ico">S</div>
+        <h3>구직자의 문제</h3>
+        <p>스타트업으로 이직을 고려할 때 <span class="stat">"회사의 성장 가능성"</span>을 핵심 기준으로 꼽는 비율이 <span class="stat">55~60%</span>에 달하지만, 채용 공고만으로는 이를 확인하기 어렵습니다.</p>
+      </div>
+      <div class="card">
+        <div class="badge-ico">C</div>
+        <h3>구인 기업의 문제</h3>
+        <p>스타트업 채용 담당자의 <span class="stat">절반 이상</span>이 "인재풀 부족" 또는 "검증 방법의 불확실성"을 채용의 어려움으로 꼽습니다. 직무 핏만으로는 함께 성장할 인재를 가려내기 어렵습니다.</p>
+      </div>
+    </div>
+
+    <div class="solution-box">
+      <b>본 세션은</b> 혁신의숲의 스타트업 성장 데이터와, 그룹바이의 채용 인프라·인재 풀을 결합해 이 문제를 함께 다루는 자리입니다. 그룹바이에게는 구직자·구인기업 양쪽에 노출되는 오프라인 접점이자 리드 확보 기회가 됩니다.
+    </div>
+
+    <div class="info-grid" style="margin-top:32px;">
+      <div class="info-card">
+        <div class="label">행사명</div>
+        <div class="value">G-SUMMIT 2026<br>(경기스타트업서밋)</div>
+      </div>
+      <div class="info-card">
+        <div class="label">일시</div>
+        <div class="value big">2026.10.15(목)<br>13:00~14:30</div>
+      </div>
+      <div class="info-card">
+        <div class="label">장소</div>
+        <div class="value">수원컨벤션센터<br>서브 세션 무대</div>
+      </div>
+      <div class="info-card">
+        <div class="label">구성</div>
+        <div class="value">세션1 + 세션2<br>(공동 운영)</div>
+      </div>
+    </div>
+    <p class="note">※ 매년 이직을 고민하는 구직자들의 회사 탐색이 본격화되는 시기가 하반기(9~11월)로 관측되는데, 이번 세션 일정이 그 시기와 맞닿아 있어 타이밍상으로도 적절합니다.</p>
+  </div>
+</section>
+
+<section class="alt" id="session">
+  <div class="wrap">
+    <p class="eyebrow">Program</p>
+    <h2 class="h2">세션 구성</h2>
+    <p class="lead">스타트업 HR·의사결정자와 구직자, 두 타깃을 위한 세션을 각각 준비합니다.</p>
+
+    <div class="grid2">
+      <div class="session-card">
+        <span class="session-tag">SESSION 1 · HR·의사결정자 대상</span>
+        <h3>성장하는 스타트업의<br>채용 브랜딩과 인재 소싱</h3>
+        <ul>
+          <li><b>마크앤컴퍼니(혁신의숲)</b> — 혁신의숲 데이터를 활용해 스스로 어필하기 어려운 회사의 성장 스토리를 데이터로 구축하고 채용 콘텐츠에 활용하는 방법 소개</li>
+          <li><b>그룹바이</b> — 실제 채용 트렌드, 인재 소싱 노하우, 자사 플랫폼 활용 사례 공유</li>
+          <li>Q&amp;A</li>
+        </ul>
+      </div>
+      <div class="session-card">
+        <span class="session-tag">SESSION 2 · 스타트업 구직자 대상</span>
+        <h3>나의 성장과 커리어에<br>적합한 스타트업 찾기</h3>
+        <ul>
+          <li><b>마크앤컴퍼니(혁신의숲)</b> — 이직을 고려할 때 혁신의숲을 봐야 하는 이유, 성장 데이터를 해석하는 법, 채용공고 정보 외에 스타트업의 무엇을 봐야 하는지 소개</li>
+          <li><b>그룹바이</b> — HR 전문가 스피치, 구직자 관점의 실전 팁, 지원 회사 파악하기 등</li>
+          <li>패널토론 — 마크앤컴퍼니 + 그룹바이 + 채용/HR 전문가</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="value">
+  <div class="wrap">
+    <p class="eyebrow">Value</p>
+    <h2 class="h2">마크앤컴퍼니가 제공하는 핵심 가치</h2>
+    <div class="grid3">
+      <div class="value-card">
+        <div class="num">01 · 구직자 관점</div>
+        <h3>“이 회사, 진짜 괜찮나?”에 데이터로 답합니다</h3>
+        <p>재직 시점이 회사의 성장 시기와 겹치는 경험이 왜 커리어에 의미가 있는지, 직무 공고만으로는 보이지 않는 회사의 성장 국면이라는 관점을 더합니다.</p>
+      </div>
+      <div class="value-card">
+        <div class="num">02 · 구인 스타트업(HR) 관점</div>
+        <h3>채용 브랜딩과 적합 인재 발굴</h3>
+        <p>스스로 어필하기 어려운 성장을 실측 데이터로 뒷받침하고, "성장 시기를 함께 경험한 인재"가 조직의 방향성을 이해하는 데 유리하다는 관점을 데이터로 제시합니다.</p>
+      </div>
+      <div class="value-card">
+        <div class="num">03 · 혁신의숲 전문채용관</div>
+        <h3>아직 드러나지 않은 성장 기업을 보여줍니다</h3>
+        <p>초기 단계라 알려지지 않았을 뿐, 이미 성장하고 있는 기업이 있습니다. 기술·매출·투자·성과가 한눈에 드러나는 채용 브랜딩 페이지를 혁신의숲 데이터로 구축해, 구직자에게 "지금 성장 중인 스타트업"임을 설득력 있게 보여줍니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rnr">
+  <div class="wrap">
+    <p class="eyebrow">Roles &amp; Responsibilities</p>
+    <h2 class="h2">역할 분담 (R&amp;R)</h2>
+    <p class="lead">공동 세션 운영을 위한 역할 제안입니다. 세부 사항은 그룹바이와 함께 확정해 나갑니다.</p>
+
+    <table class="rnr">
+      <tr>
+        <th>구분</th>
+        <th>마크앤컴퍼니 (혁신의숲)</th>
+        <th>그룹바이</th>
+      </tr>
+      <tr>
+        <td>기획·운영<br><span style="font-weight:400;font-size:11.5px;color:var(--sub);">(공통 기반)</span></td>
+        <td><ul><li>행사 전체 기획 및 프로그램 구성</li><li>주최측(GBSA) 커뮤니케이션 · 무대 배정 협의 총괄</li><li>세션 운영 시나리오 · 타임테이블 관리</li><li>공동 홍보물(상세페이지·포스터) 제작</li><li>혁신의숲 채널 기반 참가자 모객</li></ul></td>
+        <td><ul><li>자사 채널 기반 공동 모객 · 홍보</li><li>세션 주제 구성 협의 및 발표 준비</li><li>세션 현장 운영 인력 편성</li></ul></td>
+      </tr>
+      <tr>
+        <td>세션 (무대)</td>
+        <td><ul><li>세션1 발표 — 혁신의숲 데이터 기반 성장 스타트업 채용 브랜딩</li><li>세션2 발표 — 구직자가 회사를 보는 방법</li><li>패널 참여 및 Q&amp;A</li><li><b>발표자</b> — 마크앤컴퍼니 홍경표 대표 (TBD)</li></ul></td>
+        <td><ul><li>세션1·2 발표 — 채용 트렌드 · 인재 소싱</li><li>외부 HR 전문가 연사 섭외 및 주제 전달</li><li>패널 참여 및 Q&amp;A</li><li><b>발표자</b> — 그룹바이 배정</li></ul></td>
+      </tr>
+      <tr>
+        <td>행사 이후</td>
+        <td><ul><li>채용 플랫폼 연계 — 성장 데이터 카드 · 검증 링크를 그룹바이 공고에 활용하는 방안 설계</li><li>구직자 · 구인 스타트업의 지속 유입 채널 운영</li><li>세션 콘텐츠 재가공 및 배포</li></ul></td>
+        <td><ul><li>세션 참가자 리드 관리 및 고객 전환</li><li>참여 기업 대상 후속 영업 · 컨택</li></ul></td>
+      </tr>
+    </table>
+    <p class="note">※ 위 R&amp;R은 제안 초안이며, 협의를 통해 세부 사항을 함께 완성합니다.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <h3>세션 협업 관련 문의</h3>
+        <p>언제든 편하게 연락 주세요.</p>
+      </div>
+      <div class="details">
+        <span class="who">마크앤컴퍼니 정서우 (Isaac)</span>
+        <span>그로스팀 사업개발 매니저</span>
+        <span>swchung@markncompany.co.kr</span>
+        <span>010-6300-7451</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  마크앤컴퍼니 (혁신의숲) × 그룹바이 · G-SUMMIT 2026 공동 세션 제안 · 2026-08
+</footer>
+
+</body>
+</html>
